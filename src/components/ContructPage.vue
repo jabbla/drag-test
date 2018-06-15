@@ -35,12 +35,18 @@
 <script>
 import DragableFactory from '../../lib/DragableFactory.js';
 import Dragable from '../../lib/Dragable.js';
+import DragTargetArea from '../../lib/DragTargetArea.js';
 
 export default {
   name: 'ContructPage',
   props: ['dragableInfoList'],
   data(){
     return {};
+  },
+  mounted(){
+      let targetArea = this.$refs.targetArea;
+
+      this._dragTargetArea = new DragTargetArea({dom: targetArea});
   },
   created(){
       this.dragableList = this.dragableInfoList.map(dragableInfo => DragableFactory.make(dragableInfo));
@@ -65,8 +71,7 @@ export default {
         let id = dataTransfer.getData('Text');
         let dragable = Dragable.getDragableById(id);
 
-
-        this.$refs.targetArea.appendChild(dragable.getDom());
+        this._dragTargetArea.putDragable(dragable);
         e.preventDefault();
       }
   }
@@ -94,6 +99,6 @@ li {
     border-bottom: 1px solid #ddd;
 }
 .m-dragable-target-area {
-    height: 500px;
+    min-height: 500px;
 }
 </style>

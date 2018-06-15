@@ -1,0 +1,20 @@
+.click-focus {
+    border: 1px dashed rgba(0, 0, 0.3);
+    border-radius: 2px;
+}
+.click-focus-wraper {
+}
+.delete-fixed-btn {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.drag-enter {
+    border: 1px dashed rgba(0, 0, 0.3);
+    border-radius: 2px;
+}
+.fixed-dragable {
+    position: relative;
+    cursor: pointer;
+    box-sizing: content-box;
+}
