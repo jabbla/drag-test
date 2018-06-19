@@ -9,6 +9,11 @@
     top: 100%;
     left: 0;
 }
+.set-fixed-btn {
+    position: absolute;
+    top: 100%;
+    left: 60px;
+}
 .drag-enter {
     border: 1px dashed #ddd;
     border-radius: 2px;

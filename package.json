@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "element-ui": "^2.4.1",
+    "js-beautify": "^1.7.5",
+    "module": "^1.2.5",
+    "prettier": "^1.13.5",
     "vue": "^2.5.16",
     "wolfy87-eventemitter": "^5.2.4"
   },

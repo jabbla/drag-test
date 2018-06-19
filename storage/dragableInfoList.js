@@ -14,6 +14,16 @@ export default [
             {
                 nodeType: 'text',
                 text: '一个段落元素1'
+            },
+            {
+                nodeType: 'element',
+                tagName: 'span',
+                children: [
+                    {
+                        nodeType: 'text',
+                        text: 'div'
+                    }        
+                ]
             }
         ]
     },
