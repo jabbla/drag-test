@@ -45,7 +45,7 @@ var module = {
     children: []                //可以包括，module，component，htmlNode
 };
 
-/**page */
+/**page*/
 var page = {
     type: 'page',
     name: 'pageName',           //页面名称
