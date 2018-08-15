@@ -15,6 +15,7 @@ var htmlNode = {
 /**component */
 var component = {
     type: 'component',
+    projectConfig: {},          //工程相关配置
     name: 'customElement',      //全局名称
     scopedName: 'scopedName',   //局部注册的组件名称
     props: [                    //外部数据接口
